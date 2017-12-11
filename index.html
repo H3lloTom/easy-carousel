@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Carousel</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_477100_hhghthnpk19n3ik9.css">
+	<script src="/src/carousel.min.js"></script>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.img-list {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			list-style-type: none;
+		}
+
+		.img-list li {
+			display: none;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		.img-list .active,
+		.img-list .prev {
+			display: block;
+		}
+
+		.carousel-btn {
+			text-decoration: none;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 15%;
+			text-align: center;
+			color: #ffffff;
+		}
+
+		.carousel-btn i {
+			display: inline-block;
+			position: absolute;
+			font-size: 30px;
+			top: 50%;
+			margin-top: -15px;
+			margin-left: -15px;
+		}
+
+		.carousel-btn.left {
+			left: 0;
+		}
+
+		.carousel-btn.right {
+			right: 0;
+		}
+
+		/* 点击左键当前退场 */
+
+		.prev.left {
+			animation: leftPrevAnimation 2s;
+		}
+
+		/* 点击左键进场 */
+
+		.active.left {
+			animation: leftActiveAnimation 2s;
+		}
+
+		/* 点击右键当前退场 */
+
+		.prev.right {
+			animation: rightPrevAnimation 2s;
+		}
+
+		/* 点击右键进场 */
+
+		.active.right {
+			animation: rightActiveAnimation 2s;
+		}
+
+		@keyframes leftPrevAnimation {
+			0% {
+				left: 0;
+			}
+			100% {
+				left: 400px;
+			}
+		}
+
+		@keyframes rightPrevAnimation {
+			0% {
+				right: 0;
+			}
+			100% {
+				right: 400px;
+			}
+		}
+
+		@keyframes leftActiveAnimation {
+			0% {
+				left: -400px;
+			}
+			100% {
+				left: 0px;
+			}
+		}
+
+		@keyframes rightActiveAnimation {
+			0% {
+				right: -400px;
+			}
+			100% {
+				right: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="carousel">
+
+	</div>
+	<script>
+		var option = {};
+		option.arr = ["http://dummyimage.com/400x100/f279ce", "http://dummyimage.com/400x100/79f1f2", "http://dummyimage.com/400x100/f2cf79"];
+		var cr = new Carousel(option);
+		cr.init();
+	</script>
+</body>
+
+</html>
