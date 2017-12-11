@@ -1,5 +1,5 @@
 {
-  "name": "easy-carousel",
+  "name": "ok-carousel",
   "version": "1.0.0",
   "description": "an easy carousel plugin",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/H3lloTom/easy-carousel.git"
   },
-  "author": "neptune",
+  "author": "h3llotom",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/H3lloTom/easy-carousel/issues"
