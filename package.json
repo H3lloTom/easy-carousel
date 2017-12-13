@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/H3lloTom/easy-carousel.git"
+    "url": "git+ssh://git@github.com/H3lloTom/ok-carousel.git"
   },
   "author": "h3llotom",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/H3lloTom/easy-carousel/issues"
+    "url": "https://github.com/H3lloTom/ok-carousel/issues"
   },
-  "homepage": "https://github.com/H3lloTom/easy-carousel#readme",
+  "homepage": "https://github.com/H3lloTom/ok-carousel#readme",
   "dependencies": {
     "uglifyjs-webpack-plugin": "^1.1.2",
     "webpack": "^3.10.0"
