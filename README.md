@@ -1,2 +1,2 @@
-# easy-carousel
+# ok-carousel
 an easy carousel plugin
